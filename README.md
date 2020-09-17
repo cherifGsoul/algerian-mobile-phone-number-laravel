@@ -39,7 +39,7 @@ The definition above allows to use the `mobile_phone_number` as value object whe
 
 ### Validation:
 
-The mobile phone validator is `Cherif\AlgerianMobilePhoneNumber\Laravel\Rules\AlgerianMobilePhoneNumberRule` it can be used the request's input to ensure 
+The mobile phone validator is `Cherif\AlgerianMobilePhoneNumber\Laravel\Rules\AlgerianMobilePhoneNumberRule` it can be used with the request's to validate the input:
 
 ```php
 use Cherif\AlgerianMobilePhoneNumber\Laravel\Rules\AlgerianMobilePhoneNumberRule;
