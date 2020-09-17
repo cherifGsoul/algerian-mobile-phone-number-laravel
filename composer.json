@@ -1,0 +1,29 @@
+{
+    "name": "cherif/algerian-mobile-phone-number-laravel",
+    "description": "Allows to use cherif/algerian-mobile-number in Laravel",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "cherif/algerian-mobile-phone-number": "^0.5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cherif\\AlgerianMobilePhoneNumber\\Laravel\\": "."
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cherif\\AlgerianMobilePhoneNumber\\Laravel\\Tests\\": "tests/"
+        }
+    }
+}
