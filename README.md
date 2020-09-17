@@ -60,7 +60,7 @@ public function store(Request $request)
 
     // The customer is valid...
 }
-
+```
 
 ## Contribution
 Contributions are welcome to make this library better.
