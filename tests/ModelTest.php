@@ -15,22 +15,12 @@ class ModelTest extends TestCase
         return [AlgerianMobilePhoneNumberServiceProvider::class];
     }
 
-    protected function getEnvironmentSetUp($app)
-    {
-        $app['config']->set('database.default', 'testbench');
-        $app['config']->set('database.connections.testbench', [
-            'driver'   => 'sqlite',
-            'database' => ':memory:',
-            'prefix'   => '',
-        ]);
-    }
-
     public function setUp(): void
     {
         parent::setUp();
-
-        $this->artisan('migrate',
-                  ['--database' => 'testbench'])->run();
+        require_once __DIR__.'/migrations/2020_09_16_220322_create_customers_table.php';
+        (new \CreateCustomersTable())->up();
+        $this->loadLaravelMigrations();
     }
 
     public function testPersistModelWithValueObject()
